@@ -1,4 +1,5 @@
-esm-style-guide
+[Marketplace Style Guide](http://cara-jo.github.io/marketplace-style-guide/)
 ===============
 
-The Official Energy Saver Marketplace Style Guide
+The official Marketplace Style Guide
+
