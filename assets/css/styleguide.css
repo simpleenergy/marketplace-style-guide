@@ -1,0 +1,28 @@
+body {
+  position: relative; padding-top: 0px;}
+
+h1.blue {color: #25B1DE}
+
+.nav-pills > li > a {border-radius: 0px; border-left: 4px solid #ffffff; color: #53545B; text-transform: uppercase;}
+.nav-pills > li.active > a {background: transparent; border-left: 4px solid #25B1DE; color: #25B1DE;}
+	.nav-pills > li.active > a:hover {background: #f6f6f6; color: #25B1DE}
+
+.panel.color {text-align: center;}
+.panel.color .panel-body {font-weight: 700;  color: #ffffff; border-top-right-radius: 4px; border-top-left-radius: 4px;}
+
+
+.panel.primary .panel-body {background:#25B1DE;}
+.panel.success .panel-body {background:#76C144;}
+.panel.lowalert .panel-body {background:#FFC20F;}
+.panel.highalert .panel-body {background:#F7912F;}
+.panel.danger .panel-body {background:#F04546;}
+.panel.accentpurple .panel-body {background:#A6509E;}
+.panel.dk-gray .panel-body {background:#53545B;}
+.panel.lt-blue-gray .panel-body {background:#BAC1C6;}
+.panel.border-gray .panel-body {background:#EBEAEB; color:#53545B;}
+
+.hljs {padding: 0; background:transparent; }
+.hljs, .hljs-subst, .hljs-tag .hljs-title, .nginx .hljs-title {
+color: #53545B;
+}
+.mont {font-family: @montserrat; text-transform: uppercase;}
