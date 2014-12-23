@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Energy Saver Marketplace Style Guide</title>
+	<title>Marketplace Style Guide</title>
 	  <link href='http://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,400italic,700italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.css"/>
@@ -22,15 +22,26 @@
 		<div class="col-md-2">
 			<div id="site-navigation" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
 				<ul class="nav nav-pills nav-stacked">
-				  <li role="presentation"><a href="#colors" class="active">Colors</a></li>
-				  <li role="presentation"><a href="#typography">Typography</a></li>
-				  <li role="presentation"><a href="#buttons">Buttons</a></li>
-				  <li role="presentation"><a href="#">Product Modules</a></li>
-				  <li role="presentation"><a href="#">Alerts</a></li>
-				  <li role="presentation"><a href="#">Icons</a></li>
+<!-- 					<li role="presentation"><a href="#framework" class="active">Framework</a></li>
+ -->					<li role="presentation"><a href="#colors" class="active">Colors</a></li>
+					<li role="presentation"><a href="#typography">Typography</a></li>
+					<li role="presentation"><a href="#buttons">Buttons</a></li>
+					<li role="presentation"><a href="#product-modules">Product Modules</a></li>
+					<li role="presentation"><a href="#">Alerts</a></li>
+					<li role="presentation"><a href="#">Icons</a></li>
 				</ul>
 			</div>
 		</div>
+			<!-- <section class="profile-section" id="framework">
+				<h1>Framework</h1>
+				<h3>Bootstrap 3.3.1</h3>
+				<p>The marketplace platform uses the Bootstrap HTML, CSS and JS frontend framework. For a full list of components and resources, visit <a href="http://getbootstrap.com" target="blank">getbootstrap.com</a></p>
+				<div class="row">
+				</div>
+				<h3>LESS CSS Preprocessor</h3>
+				<div class="row">
+				</div>
+			</section> -->
 		<div class="col-md-10">
 			<section class="profile-section" id="colors">
 				<h1>Colors</h1>
@@ -118,13 +129,19 @@
 			</section>
 
 			<section class="profile-section" id="typography">
-				<h1>Typography</h1>
-				<p>There are two main fonts on the site, Montseratt and Lato. Montseratt is to only be used for headings and buttons. Lato is the global body font and can be used anywhere except headings.</p>
-				<h4>Font Calculation</h4>
-				<p>Font sizes for headings and other elements are calculated using REMs.</p>
-				<p>Font sizes are reset to a base number that when multplied by 10 displays the same for both EMs and pixels.</p>
-				<p>Each heading has a different font-size for the different viewports it will be viewed on to maxmize readbility.</p>
-<pre><code class="css">.font-size(@sizeValue) {
+				<div class="row">
+					<div class="col-md-6">
+						<h1>Typography</h1>
+						<p>There are two main fonts on the site, Montseratt and Lato. Montseratt is to only be used for headings and buttons. Lato is the global body font and can be used anywhere except headings.</p>
+						<h4>Font Calculation</h4>
+						<p>Font sizes for headings and other elements are calculated using REMs.</p>
+						<p>Font sizes are reset to a base number that when multplied by 10 displays the same for both EMs and pixels.</p>
+						<p>Each heading has a different font-size for the different viewports it will be viewed on to maxmize readbility.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+<pre><code class="less">.font-size(@sizeValue) {
   	@remValue: @sizeValue;
   	@pxValue: (@sizeValue * 10);
   	font-size: ~"@{pxValue}px"; 
@@ -138,46 +155,61 @@
 	line-height: ~"@{emValue}rem";
 }
 </code></pre>
-				<h1>Heading 1</h1>
-				<pre><code>h1 {.font-size(4); .line-height(5.2);
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<h1>Heading 1</h1>
+				<pre><code class="less">h1 {.font-size(4); .line-height(5.2);
 	@media @mobile {.font-size(3);}
 	@media @tablet {.font-size(3.5);} 
 	a {color: @dk-gray;}
 }
 </code></pre>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
 				<h2>Heading 2</h2>
-				<pre><code>h2 {.font-size(2.75); .line-height(3.25);
+				<pre><code class="less">h2 {.font-size(2.75); .line-height(3.25);
 	@media @mobile {.font-size(2); .line-height(3);}
 	@media @tablet {.font-size(2.5); .line-height(3);}
 	a {color: @dk-gray;}
 }
 </code></pre>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
 				<h3>Heading 3</h3>
-				<pre><code>h3 {.font-size(2.5); .line-height(2.7);
+				<pre><code class="less">h3 {.font-size(2.5); .line-height(2.7);
 	@media @mobile {.font-size(1.5); .line-height(2.5);}
 	@media @tablet {.font-size(1.75); .line-height(2.75);}
 	a {color: @dk-gray;}
 }
 </code></pre>
 				<h4>Heading 4</h4>
-				<pre><code>h4 {.font-size(2.125); .line-height(2.4);
+				<pre><code class="less">h4 {.font-size(2.125); .line-height(2.4);
 	@media @mobile {.font-size(1.3); .line-height(2.3);}
 	@media @tablet {.font-size(1.25); .line-height(2);}
 	a {color: @dk-gray;}
 }
-</code></pre>
+</code></pre></div></div>
 			</section>
 
 
 			<section class="profile-section" id="buttons">
-				<h1>Buttons</h1>
-				<p>Buttons require two classes to achieve different styles. The first class must be applied to all buttons, <code>btn</code> makes the button look like a button. The second class gives it a color to give it context: <code>btn-default</code>, <code>btn-primary</code>, <code>btn-default</code>, <code>btn-warning</code>, <code>btn-danger</code>, &amp; <code>btn-light</code>.</p>
-				<p>There are additional styles that you can use with buttons.
-				</p>
-				<ul>
-					<li><code>mont</code> Makes the button use Montseratt as the font and makes the text uppercase.</li>
-					<li><code>btn-block</code> Makes the button span the entire width of it's continer by making it a block level element.</li>
-				</ul>
+				<div class="row">
+					<div class="col-md-6">
+						<h1>Buttons</h1>
+						<p>Buttons require two classes to achieve different styles. The first class must be applied to all buttons, <code>btn</code> makes the button look like a button. The second class gives it a color to give it context: <code>btn-default</code>, <code>btn-primary</code>, <code>btn-default</code>, <code>btn-warning</code>, <code>btn-danger</code>, &amp; <code>btn-light</code>.</p>
+						<p>There are additional styles that you can use with buttons.</p>
+						<ul>
+							<li><code>mont</code> Makes the button use Montseratt as the font and makes the text uppercase.</li>
+							<li><code>btn-block</code> Makes the button span the entire width of it's continer by making it a block level element.</li>
+						</ul>
+					</div>
+				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<h3>Default</h3>
@@ -366,7 +398,130 @@
 
 				</div>
 			</section>
+			<section class="profile-section" id="product-modules">
+				<div class="row">
+					<div class="col-md-6">
+						<h1>Product Feature Modules</h1>
+						<p>To highlight the product features, you can use a variety of layouts based on what the feature is.</p>
+						<p>Each feature has a headline contained in a <code>h3</code> and a short description (140 characters or less), contained in a <code>p</code></p>
+						<p>Remove all text within the double brakets <code>[[ ]]</code> with the feature headline, feature copy, or product image. When inserting a URL make sure that you are using the absolute path to the image. Make sure that <code>http://</code> is at the beginning of the URL.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Product Feature with image on the right</h3>
+						<p>Sometimes the photo just looks better on the right!</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<p><img src="assets/images/feature-product-right.png" class="img-responsive img-thumbnail"/></p>
+					</div>
+					<div class="col-md-6">
+						<p>Insert this entire code block where you would like this feature style to appear:</p>
+						<pre><code class="html">&lt;div class="container">
+	&lt;div class="row">
+		&lt;div class="col-sm-6 col-md-5 feature-description">
+			&lt;h3>[[FEATURE HEADLINE]]&lt;/h3>
+			&lt;p>[[FEATURE COPY]]&lt;/p>
+			&lt;h3>[[FEATURE HEADLINE]]&trade;&lt;/h3>
+			&lt;p>[[FEATURE COPY&lt;/p>
+		&lt;/div>
 
+		&lt;div class="col-sm-6 col-md-5 col-md-offset-1">
+			&lt;img src="[[IMAGE URL]]" class="img-responsive" />
+		&lt;/div>
+	&lt;/div>
+&lt;/div></code></pre>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Product Feature with image on the left</h3>
+						<p>Sometimes the photo just looks better on the left!</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<p><img src="assets/images/feature-product-left.png" class="img-responsive img-thumbnail"/></p>
+					</div>
+					<div class="col-md-6">
+						<p>Insert this entire code block where you would like this feature style to appear:</p>
+						<pre><code class="html">&lt;div class="container">
+	&lt;div class="row">
+		&lt;div class="col-sm-6 col-md-5 col-md-offset-1">
+			&lt;img src="[[IMAGE URL]]" class="img-responsive" />
+		&lt;/div>
+
+		&lt;div class="col-sm-6 col-md-5 feature-description">
+			&lt;h3>[[FEATURE HEADLINE]]&lt;/h3>
+			&lt;p>[[FEATURE COPY]]&lt;/p>
+			&lt;h3>[[FEATURE HEADLINE]]&trade;&lt;/h3>
+			&lt;p>[[FEATURE COPY&lt;/p>
+		&lt;/div>
+	&lt;/div>
+&lt;/div></code></pre>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Product Feature with full-width hero image &amp; copy on the left</h3>
+						<p>Based on where the text will be the most visible, place it on the left or the right, but not overlapping the actual product.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<p><img src="assets/images/feature-hero-full-left.png" class="img-responsive img-thumbnail"/></p>
+					</div>
+					<div class="col-md-6">
+						<p>Insert this entire code block where you would like this feature style to appear:</p>
+						<p><i>Remove the class <code>white</code> to reset the font color to it's default color.</i></p>
+						<pre><code class="html">&lt;div class="feature-hero left white full" style="background: url([[IMAGE URL HERE]]) no-repeat top right;">
+	&lt;div class="container">
+		&lt;div class="row">
+			&lt;div class="col-sm-6 col-md-5 col-md-offset-1 feature-description">
+				&lt;h3>[[FEATURE HEADLINE]]&trade;&lt;/h3>
+				&lt;p>[[FEATURE COPY&lt;/p>
+				&lt;h3>[[FEATURE HEADLINE]]&trade;&lt;/h3>
+				&lt;p>[[FEATURE COPY&lt;/p>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div></code></pre>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Product Feature with full-width hero image &amp; copy on the right</h3>
+						<p>Based on where the text will be the most visible, place it on the left or the right, but not overlapping the actual product.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<p><img src="assets/images/feature-hero-full-right.png" class="img-responsive img-thumbnail"/></p>
+					</div>
+					<div class="col-md-6">
+						<p>Insert this entire code block where you would like this feature style to appear:</p>
+						<p><i>Remove the class <code>white</code> to reset the font color to it's default color.</i></p>
+						<pre><code class="html">&lt;div class="feature-hero left white full" style="background: url([[IMAGE URL HERE]]) no-repeat top right;">
+	&lt;div class="container">
+		&lt;div class="row">
+			&lt;div class="col-sm-6 col-md-5 col-md-offset-6 feature-description">
+				&lt;h3>[[FEATURE HEADLINE]]&trade;&lt;/h3>
+				&lt;p>[[FEATURE COPY&lt;/p>
+				&lt;h3>[[FEATURE HEADLINE]]&trade;&lt;/h3>
+				&lt;p>[[FEATURE COPY&lt;/p>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div></code></pre>
+					</div>
+				</div>
+
+			</section>
 
 
 		</div>
