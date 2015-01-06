@@ -27,6 +27,7 @@
 					<li role="presentation"><a href="#typography">Typography</a></li>
 					<li role="presentation"><a href="#buttons">Buttons</a></li>
 					<li role="presentation"><a href="#product-modules">Product Modules</a></li>
+					<li role="presentation"><a href="#product-images">Product Images</a></li>
 					<li role="presentation"><a href="#">Alerts</a></li>
 					<li role="presentation"><a href="#">Icons</a></li>
 				</ul>
@@ -421,14 +422,14 @@
 						<p>Insert this entire code block where you would like this feature style to appear:</p>
 						<pre><code class="html">&lt;div class="container">
 	&lt;div class="row">
-		&lt;div class="col-sm-6 col-md-5 feature-description">
+		&lt;div class="col-sm-6 col-md-5 col-md-offset-1 feature-description">
 			&lt;h3>[[FEATURE HEADLINE]]&lt;/h3>
 			&lt;p>[[FEATURE COPY]]&lt;/p>
 			&lt;h3>[[FEATURE HEADLINE]]&trade;&lt;/h3>
 			&lt;p>[[FEATURE COPY&lt;/p>
 		&lt;/div>
 
-		&lt;div class="col-sm-6 col-md-5 col-md-offset-1 feature-img">
+		&lt;div class="col-sm-6 col-md-5 feature-img">
 			&lt;img src="[[IMAGE URL]]" class="img-responsive" />
 		&lt;/div>
 	&lt;/div>
@@ -523,7 +524,41 @@
 
 			</section>
 
-
+			<section class="profile-section" id="product-images">
+				<div class="row">
+					<div class="col-md-6">
+						<h1>Product Images</h1>
+						<p>Users should see beautiful product images when browsing the marketplace. Product feature images and hero images should be as high res as possible, while still creating a pleasent experience with fast loading images.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+					<h3>Image size</h3>
+						<ul>
+							<li>Image size should be minimum 520x520 pixels</li>
+							<li>Image must include white background</li>
+							<li>Image cannot be transparent</li>
+							<li>Image content should be centered on white background</li>
+							<li>Image content must be a minimum of 500 pixels on the widest edge (height or width)</li>
+							<li>Image content must have a 10px gutter around it.</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<img src="assets/images/image-example.png" class="img-responsive"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+					<h3>Product feature hero image size</h3>
+						<ul>
+							<li>Image size should be minimum 1600x500 pixels</li>
+							<li>Image cannot be transparent</li>
+							<li>Image subject should be either left or right justified, never in the center.</li>
+						</ul>
+					</div>
+					
+				</div>
+			</section>
 		</div>
 	</div>
 </div>
